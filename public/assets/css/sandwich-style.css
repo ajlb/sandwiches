@@ -1,0 +1,16 @@
+body {
+    background-image: url(/assets/img/picnic2.png);
+    color: gray;
+}
+
+.btn {
+    border-radius: 9% !important;
+}
+
+.card {
+    border-radius: 3% !important;
+}
+
+li{
+    line-height: 2.6 !important;
+}

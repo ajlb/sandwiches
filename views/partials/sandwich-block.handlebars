@@ -1,9 +1,14 @@
 <li>
 	{{sandwich_name}}
 
-	<button class="change-devour" data-id="{{id}}" data-devour="{{devoured}}">
-		{{#if devoured}}DEVOUR!{{else}}That was delicious order another!{{/if}}
+	<button class="change-devour waves-effect waves-light btn blue-grey" data-id="{{id}}" data-devour="{{devoured}}">
+		{{#if devoured}}<i class="fas fa-utensils"></i> DEVOUR!{{else}}<i class="far fa-thumbs-up"></i> Order another!{{/if}}
 	</button>
-
-	{{!-- <button class="delete-sandwich" data-id="{{this.id}}">DELETE!</button> --}}
+    {{#if devoured}}
+    <button class="delete-sandwich waves-effect waves-light btn red" data-id="{{this.id}}"><i class="fas fa-toilet"></i> Gross! Delete it!</button>
+    {{/if}}
+    
+    {{#unless devoured}}
+	<button class="delete-sandwich waves-effect waves-light btn red" data-id="{{this.id}}"><i class="fas fa-toilet"></i> Gross! Delete it!</button>
+    {{/unless}}
 </li>

@@ -1,38 +1,51 @@
-<h1>Sandwiches!</h1>
-
-<h2>Sandwiches to Devour!</h2>
-
-<ul>
-    {{#each sandwich}}
-    {{#unless devoured}}
-    {{> sandwich-block devoured=true}}
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Sandwiches that have been devoured!</h2>
-
-<ul>
-    {{#each sandwich}}
-    {{#if devoured}}
-    {{> sandwich-block devoured=false}}
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a sandwich</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="sammy">Sandwich Name:</label>
-        <input type="text" id="sammy" name="sandwich_name">
+<div class="container grey lighten-5 z-depth-4">
+    <div class="row center">
+        <h1>Eat Some Sandwiches!</h1>
+        <img src="/assets/img/sammy.png"
     </div>
+    <div class="row">
+    <div class="col s4"></div>
+    <form class="create-form col s4 center">
 
-    {{!-- <div class="form-group">
-    <label for="devour">devour?</label><br>
-    <input type="radio" name="devour" value="1" checked> devour!<br>
-    <input type="radio" name="devour" value="0"> Order Another!
-    </div> --}}
+        <div class="form-group">
+            <label class="flow-text black-text" for="sammy">Make a New Sandwich:</label>
+            <input type="text" id="sammy" name="sandwich_name">
+        </div>
 
-    <button type="submit">Add sandwich</button>
-</form>
+        <button class="btn green" type="submit"><i class="fas fa-hamburger fa-spin"></i> Make it</button>
+
+    </form>
+    <div class="col s4"></div>
+</div>
+</div>
+
+    <div class="row">
+        <div class="col s12 m6 ">
+            <div class="card orange lighten-4">
+                <h5 class="center grey-text text-darken-3">Sandwiches to Devour:</h5>
+                <div class="card-content black-text">
+                        <ul>
+                            {{#each sandwich}}
+                            {{#unless devoured}}
+                            {{> sandwich-block devoured=true}}
+                            {{/unless}}
+                            {{/each}}
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card red lighten-4">
+                <h5 class="center grey-text text-darken-3">Sandwiches that have been devoured</h5>
+                <div class="card-content black-text">
+                        <ul>
+                            {{#each sandwich}}
+                            {{#if devoured}}
+                            {{> sandwich-block devoured=false}}
+                            {{/if}}
+                            {{/each}}
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
