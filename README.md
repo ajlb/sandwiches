@@ -4,6 +4,8 @@
 
 https://fierce-sea-85603.herokuapp.com/
 
+![screenshot of Sandwiches](.public/assets/img/screenshot.gif)
+
 ## Introduction:
 
 This project is a lighthearted Sandwich Generator used to explore full-stack web development. The site offers the ability to create a new sandwich, devour it, make another or discard a sandwich. The sandwiches are stored in a mySQL database in JAWSDB on Heroku. Data is rendered using express-handlebars. 
