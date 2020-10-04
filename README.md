@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)![badge: Made with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-Yellow)![badge: Uses-mysql](https://img.shields.io/badge/Uses-mysql-red)![badge: Uses-express-handlebars](https://img.shields.io/badge/Uses-express--handlebars-red)
 
-https://fierce-sea-85603.herokuapp.com/
-
 ![screenshot of Sandwiches](./public/assets/img/screenshot.gif)
+
+https://fierce-sea-85603.herokuapp.com/
 
 ## Introduction:
 
