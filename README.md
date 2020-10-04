@@ -4,7 +4,7 @@
 
 https://fierce-sea-85603.herokuapp.com/
 
-![screenshot of Sandwiches](.public/assets/img/screenshot.gif)
+![screenshot of Sandwiches](./public/assets/img/screenshot.gif)
 
 ## Introduction:
 
